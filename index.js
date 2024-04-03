@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const personalMessage = personalMessageInput.value;
       const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
   
-      if (studentName.trim() === '' || personalMessage.trim() === '') {
+      if (studentName.trim() === '' || personalMessage.trim() === '') { //  This is a logical OR (||) condition that evaluates to true if either studentName.trim() or personalMessage.trim() is an empty string.
         alert('Please fill in all fields');
         return;
       }
@@ -57,6 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.style.display = 'none';
         }
     });
-
+      closeModal.style.cursor = 'pointer';
   });
   
